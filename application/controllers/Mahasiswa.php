@@ -81,10 +81,10 @@ class Mahasiswa extends RestController
 
 	public function data_get()
 	{
-		if ($this->authtoken() == 'salah') {
-			return $this->response(array('kode' => '401', 'pesan' => 'signature tidak sesuai', 'data' => []), '401');
-			die();
-		}
+		// if ($this->authtoken() == 'salah') {
+		// 	return $this->response(array('kode' => '401', 'pesan' => 'signature tidak sesuai', 'data' => []), '401');
+		// 	die();
+		// }
 
 		$this->response([
 			'status' => 'List Data Mahasiswa',
